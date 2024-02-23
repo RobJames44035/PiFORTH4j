@@ -1,0 +1,10 @@
+\u001B[2J
+\u001B[H
+=================================================================
+|                            forth4j                            |
+|                        v${project.version}                    |
+|              Copyright (C) 2024 Robert A. James.              |
+|          forth4j comes with NO ABSOLUTELY WARRANTY.           |
+| For details see `https://www.apache.org/licenses/LICENSE-2.0' |
+=================================================================
+Type `bye' to exit.
