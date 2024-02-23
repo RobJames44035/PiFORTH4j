@@ -49,7 +49,7 @@ class Load extends AbstractRuntime {
         return null
     }
 
-    ArrayList<String> stringify(Block block) {
+    static ArrayList<String> stringify(Block block) {
         byte[] bytes = block.bytes
         ArrayList<String> blockLines = []
         // Use StringBuilder for better performance

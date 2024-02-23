@@ -30,7 +30,7 @@ class CoreMemory {
         this.blockService = blockService
     }
 
-    void buildCoreMemory() {
+    static void buildCoreMemory() {
         println("\tWill come later.")
         log.info("\tWill come later.")
     }

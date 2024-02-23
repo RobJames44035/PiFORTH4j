@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+//file:noinspection HttpUrlsUsage
 
 package primitives_classes.runtime
 
@@ -53,7 +54,7 @@ class Vocabulary extends AbstractRuntime {
         return null
     }
 
-    String runtime(String className, String vocabName) {
+    static String runtime(String className, String vocabName) {
         """
 /*
  * Copyright 2024 Robert A. James

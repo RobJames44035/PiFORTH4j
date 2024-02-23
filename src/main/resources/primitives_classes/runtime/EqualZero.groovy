@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package runtime
+package primitives_classes.runtime
 
 import com.rajames.forth.dictionary.Word
 import com.rajames.forth.runtime.AbstractRuntime

@@ -228,7 +228,7 @@ class BlockService {
         }
     }
 
-    private void verifyBlockNumber(Integer blockNumber) {
+    private static void verifyBlockNumber(Integer blockNumber) {
         if (blockNumber < 1) {
             throw new ForthException("Invalid block number: " + blockNumber)
         }

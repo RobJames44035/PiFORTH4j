@@ -20,7 +20,7 @@ import com.rajames.forth.runtime.ForthInterpreterException
 import groovy.sql.Sql
 import org.springframework.beans.factory.annotation.Autowired
 
-//import org.h2.tools.Script
+import org.h2.tools.Script
 
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional

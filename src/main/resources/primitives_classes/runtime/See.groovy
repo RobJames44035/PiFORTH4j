@@ -28,7 +28,7 @@ class See extends AbstractRuntime {
         try {
             Word dumpWord = interpreter?.words?.remove()
             println(dumpWord.toString())
-        } catch (NoSuchElementException e) {
+        } catch (NoSuchElementException ignored) {
             throw new ForthInterpreterException("No such word.")
         }
         return null
