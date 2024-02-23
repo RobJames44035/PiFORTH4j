@@ -57,8 +57,7 @@ class DatabaseBackupService {
 
         entityManager.clear()
         try (final Connection conn = this.dataSource.getConnection()) {
-// TODO
-//            Script.process(conn, absolutePath, "", "")
+            Script.process(conn, absolutePath, "", "")
         }
     }
 

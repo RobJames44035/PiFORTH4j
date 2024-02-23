@@ -16,7 +16,7 @@
 
 package primitives_classes.runtime
 
-import com.rajames.forth.Forth4J
+import com.rajames.forth.PiForth4j
 import com.rajames.forth.ForthException
 import com.rajames.forth.dictionary.Word
 import com.rajames.forth.memory.storage.Block
@@ -30,7 +30,7 @@ import org.apache.logging.log4j.Logger
 
 class Edit extends AbstractRuntime {
 
-    private static final Logger log = LogManager.getLogger(Forth4J.class.getName())
+    private static final Logger log = LogManager.getLogger(PiForth4j.class.getName())
 
 /**
  * Execute the FORTH word from the interpreter.

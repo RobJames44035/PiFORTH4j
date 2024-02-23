@@ -27,9 +27,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 /**
  * forth4j
  */
-public class Forth4J {
+public class PiForth4j {
 
-    private static final Logger log = LogManager.getLogger(Forth4J.class.getName());
+    private static final Logger log = LogManager.getLogger(PiForth4j.class.getName());
 
     public static void main(final String[] args) {
         final Options options = getOptions();
