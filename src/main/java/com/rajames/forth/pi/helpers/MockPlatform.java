@@ -29,6 +29,12 @@ public class MockPlatform extends PlatformBase<MockPlatform> implements Platform
         return Pi4J.newContextBuilder()
             .noAutoDetect()
             .add(new MockPlatform())
+            .add(
+                MockDigitalInputProvider.newInstance(null),
+                MockDigitalOutputProvider.newInstance(null),
+                MockPwmProvider.newInstance(null),
+                MockI2CProvider.newInstance(null)
+            )
             .build();
     }
 
@@ -53,5 +59,11 @@ public class MockPlatform extends PlatformBase<MockPlatform> implements Platform
     @Override
     protected String[] getProviders() {
         return new String[]{};
+    }
+
+    private static class MockDigitalOutputProvider {
+        public static Platform newInstance(Object o) {
+            return null;
+        }
     }
 }
