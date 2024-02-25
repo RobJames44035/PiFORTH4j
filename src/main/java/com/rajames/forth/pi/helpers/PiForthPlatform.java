@@ -15,9 +15,9 @@ import com.pi4j.plugin.raspberrypi.platform.RaspberryPiPlatform;
  * Custom Pi4J platform class which ensures that PiGPIO is used for interacting with the hardware components.
  * Without these overrides the auto-detection is not guaranteed to pick a well-known working set of plugins.
  */
-public class CrowPiPlatform extends RaspberryPiPlatform {
+public class PiForthPlatform extends RaspberryPiPlatform {
     /**
-     * Helper method for instantiating a new Pi4J context based on the {@link CrowPiPlatform} platform with PiGPIO plugins.
+     * Helper method for instantiating a new Pi4J context based on the {@link PiForthPlatform} platform with PiGPIO plugins.
      *
      * @return Pi4J context instance
      */
@@ -28,7 +28,7 @@ public class CrowPiPlatform extends RaspberryPiPlatform {
         // Build Pi4J context with this platform and PiGPIO providers
         return Pi4J.newContextBuilder()
             .noAutoDetect()
-            .add(new CrowPiPlatform())
+            .add(new PiForthPlatform())
             .add(
                 PiGpioDigitalInputProvider.newInstance(piGpio),
                 PiGpioDigitalOutputProvider.newInstance(piGpio),

@@ -264,6 +264,7 @@ class CoreDefinitions {
         // Complex words that are made up of a List<Word> that describes their behave
 //////////////////////////////////////// PiFORTH4j Words \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         Word pi = createPrimitiveWord("pi", "PForthInfo")
+        Word piContext = createPrimitiveWord("pi-context", "PiContext")
 
         flushService.flush()
         databaseBackupService.backupDatabase(null, null)

@@ -1,7 +1,8 @@
 package com.rajames.forth.pi.components.internal.rfid;
 
+import com.rajames.forth.pi.components.Component;
 import com.rajames.forth.pi.components.exceptions.RfidException;
-import com.rajames.forth.pi.components.helpers.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -23,7 +24,7 @@ public abstract class RfidCard {
     /**
      * Logger instance
      */
-    protected final Logger logger = new Logger();
+    protected final org.apache.logging.log4j.Logger logger = LogManager.getLogger(Component.class.getName());
 
     /**
      * Creates a new RFID card instance for the given PICC UID.

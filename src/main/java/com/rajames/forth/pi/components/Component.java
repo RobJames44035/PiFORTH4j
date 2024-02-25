@@ -1,13 +1,13 @@
 package com.rajames.forth.pi.components;
 
 import com.rajames.forth.pi.components.events.SimpleEventHandler;
-import com.rajames.forth.pi.components.helpers.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public abstract class Component {
     /**
      * Logger instance
      */
-    protected final Logger logger = new Logger();
+    protected final org.apache.logging.log4j.Logger logger = LogManager.getLogger(Component.class.getName());
 
     /**
      * Utility function to sleep for the specified amount of milliseconds.

@@ -18,6 +18,7 @@
 //file:noinspection GroovyUnusedAssignment
 package com.rajames.forth
 
+import com.pi4j.context.Context
 import com.rajames.forth.compiler.ForthCompiler
 import com.rajames.forth.compiler.ForthCompilerException
 import com.rajames.forth.memory.DataStack
@@ -67,6 +68,8 @@ class ForthRepl {
     String CURRENT
     String CONTEXT
     State STATE
+//    Raspberry Pi
+    Context piContext
 
 
     ForthRepl() {
