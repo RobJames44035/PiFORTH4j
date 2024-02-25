@@ -13,7 +13,7 @@ import com.pi4j.registry.Registry
 import com.pi4j.util.Console
 import com.pi4j.Pi4J
 
-class PForthInfo extends AbstractRuntime {
+class PiInfo extends AbstractRuntime {
     @Override
     Object execute(ForthInterpreter interpreter, Word word, Word parentWord) {
         Context pi4j = interpreter.forthRepl.piContext

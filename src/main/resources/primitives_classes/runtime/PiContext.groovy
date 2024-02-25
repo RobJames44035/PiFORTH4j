@@ -17,6 +17,7 @@
 package primitives_classes.runtime
 
 import com.rajames.forth.dictionary.Word
+import com.rajames.forth.pi.helpers.MockPlatform
 import com.rajames.forth.pi.helpers.PiForthPlatform
 import com.rajames.forth.runtime.AbstractRuntime
 import com.rajames.forth.runtime.ForthInterpreter
@@ -34,7 +35,16 @@ class PiContext extends AbstractRuntime {
      */
     @Override
     Object execute(ForthInterpreter interpreter, Word word, Word parentWord) {
-        interpreter.forthRepl.piContext = PiForthPlatform.buildNewContext()
+        if(interpreter.dataStack.size() == 0) {
+            interpreter.forthRepl.piContext = PiForthPlatform.buildNewContext()
+        } else {
+            Integer f = interpreter.dataStack.pop() as Integer
+            if(f == 0) {
+                interpreter.forthRepl.piContext = MockPlatform.buildNewContext()
+            } else {
+                interpreter.forthRepl.piContext = PiForthPlatform.buildNewContext()
+            }
+        }
         return null
     }
 }
